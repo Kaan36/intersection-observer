@@ -1,0 +1,40 @@
+body {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    height: 100vh;
+}
+
+.element {
+    display: flex;
+    width: 35rem;
+    height: 35rem;
+    &.first {
+        background-color: blue;
+    }
+    &.second {
+        margin: 50rem 0 0 0;
+        background-color: white;
+    }
+    &.animation{
+        animation: spin 1s;
+    }
+}
+
+@keyframes spin {
+    0%{
+
+        transform: translateX(500px) rotate(0deg);
+    }
+    100%{
+  
+        transform: translateX(0px) rotate(360deg);
+    }
+}
+
+
+
